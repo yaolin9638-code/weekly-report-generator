@@ -1,0 +1,9 @@
+# Credentials (do not commit)
+credentials/
+*.json
+
+# Environment
+.env
+
+# OS
+.DS_Store
