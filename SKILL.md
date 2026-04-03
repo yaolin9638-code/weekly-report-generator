@@ -19,7 +19,7 @@ description: 自定义配置自动从Slack获取YOUR_PROJECT_NAME相关信息，
 - YOUR_CHANNEL_ID_2 - 示例：YOUR_PROJECT_NAME团队频道
 
 ### 权限要求
-需要添加 groups:history 权限才能读取群组消息
+需要添加 YOUR_PERMISSION_SCOPE 权限才能读取群组消息
 
 ## Google Sheets 配置
 
@@ -51,7 +51,7 @@ description: 自定义配置自动从Slack获取YOUR_PROJECT_NAME相关信息，
 - ✅ 风险项必须写明后果与备用方案
 
 ### 时间要求
-- 周五北京时间18:00前输出
+- YOUR_DEADLINE
 - 最晚周日下午北京18:00前输出
 
 ## 周报格式
@@ -92,7 +92,7 @@ description: 自定义配置自动从Slack获取YOUR_PROJECT_NAME相关信息，
 
 ### 2. 获取本周数据
 - 从配置的频道获取本周消息
-- 日期范围: 上周一到本周四
+- 日期范围: YOUR_DATE_RANGE
 - 过滤包含"工作计划"或"工作总结"的消息
 
 ### 3. 生成内容（必须遵守格式要求）
@@ -112,14 +112,14 @@ description: 自定义配置自动从Slack获取YOUR_PROJECT_NAME相关信息，
   - B10: 下周计划
 
 ### 5. 发送通知
-- 发送链接到 Telegram 提醒查看
+- 发送通知到 YOUR_NOTIFICATION_TARGET
 
 ## 输出
 - Google Sheets 分页: 周报(MM/DD-MM/DD)
-- Telegram 通知
+- YOUR_NOTIFICATION_SERVICE 通知
 
 ## 注意事项
-- 必须使用 groups:history 权限的 Token
+- 必须使用 YOUR_PERMISSION_SCOPE 权限的 Token
 - 必须用 duplicateSheet 方式复制模板才能保留格式
 - 内容要基于本周实际工作项，不要复制上周内容
 - 严格遵守格式要求，禁止偷工减料
