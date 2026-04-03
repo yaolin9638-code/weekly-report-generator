@@ -1,22 +1,22 @@
 ---
 name: weekly-report-generator
-description: 每周四下午1点自动从Slack获取SESEAI相关信息，生成周报并写入Google Sheets
+description: 自定义配置自动从Slack获取SESEAI相关信息，生成周报并写入Google Sheets
 ---
 
 # Weekly Report Generator
 
 ## 触发条件
-- 每周五下午 13:30 自动执行
+- 自定义配置 自动执行
 - 或用户手动触发"生成周报"
 
 ## Slack 配置
 
 ### Token
-- YOUR_SLACK_TOKEN
+- YOUR_SLACK_TOKEN (必须配置)
 
-### 频道
-- web-rnd (ID: C0A1WM0GV44) - 技术研发频道
-- seseai-team (ID: C0991GCU11C) - SESEAI团队频道
+### 频道 (必须配置)
+- web-rnd (ID: C0A1WM0GV44) - 示例：技术研发频道
+- seseai-team (ID: C0991GCU11C) - 示例：SESEAI团队频道
 
 ### 权限要求
 需要添加 groups:history 权限才能读取群组消息
